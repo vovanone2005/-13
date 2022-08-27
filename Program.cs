@@ -1,11 +1,13 @@
-﻿Console.WriteLine("Введите число от 1 до 7");
+﻿Console.WriteLine("Введите число ");
 Console.Write("a: ");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a < 6)
+int a1 = a / 100;
+int a2 = a %10;
+if (a < 99)
 {
-    Console.WriteLine("Будний день");
+    Console.WriteLine("Тертьей цифы нет");
 }
-else 
+else
 {
-    Console.WriteLine("Выходной, ура ура");
+    Console.WriteLine( a2 );
 }
